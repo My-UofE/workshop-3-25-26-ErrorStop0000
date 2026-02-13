@@ -26,9 +26,12 @@ public class SumSquares {
         System.out.println("You entered: " + startNum + " and " + endNum);
         
         int sum = 0;
+        
+        int n = startNum;
 
-        for (int i = startNum; i < endNum + 1; ++i) {
-         sum = sum + i * i;
+        while (n != endNum + 1) {
+         sum = sum + n * n;
+         n = n + 1;
         }
         System.out.println(sum);
     }
